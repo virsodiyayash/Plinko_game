@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    margin: 0;
+}
+
+.header{
+    color: #e0f2f1;
+    background-color: #071d2a;
+    text-align: center;
+    font-size: 2rem;
+    /* font-family: 'Bungee', cursive; */
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Luckiest Guy', cursive; */
+    /* font-family: 'Coiny', cursive; */
+    font-family: 'Cabin Sketch', cursive;
+    padding: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main_part{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    background-color: #0f3e54;
+}
+
+.manual , .auto{
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.manual {
+    background-color: #2a4c60;/* Vibrant orange */
+    color: white;
+}
+
+.manual:hover {
+    background-color: #4a6a73; /* Slightly darker orange for hover effect */
+    color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.auto {
+    background-color: #2a4c60; /* Vibrant blue */
+    color: white;
+}
+
+.auto:hover {
+    background-color: #4a6a73; /* Slightly darker blue for hover effect */
+    color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.game_medium{
+    width: 27%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-left: 13%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.med{
+    width: 25%;
+    background-color: #0c2d40;
+    
+}
+
+.main_game_part{
+    width: 75%;
+    border: 1px solid black;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.first_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.first_row_element{
+    height: 8px;
+    width: 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 5px;
+    margin: 10px;
+}
+
+.amount_write{
+    font-size: 1rem;
+    background-color: #1b2a33;
+    color: #e0f2f1;
+    border: 1px solid #4a6a73;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.half_amount , .double_amount{
+    font-size: 1rem;
+    background-color: #4a6a73;
+    color: #e0f2f1;
+    border: 1px solid #2a4c60;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+
+.half_amount:hover, .double_amount:hover {
+    background-color: #2a4c60; /* Slightly darker for hover effect */
+    color: #e0f2f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bet_amount{
+    margin-left: 7%;
+}
+
+.risk_amount {
+    margin-left: 6%;
+}
+
+.bet_amount_text{
+    margin-top: 7%;
+    font-size: 1.3rem;
+    color: azure;
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+.select_text{
+    margin-top: 7%;
+    font-size: 1.3rem;
+    color: azure;
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+#select_for_risk {
+    width: 93%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border-radius: 5px;
+    background-color: #1b2a33; /* Matches your design theme */
+    color: #e0f2f1; /* Text color for readability */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#select_for_risk option {
+    background-color: #1b2a33; /* Consistent background for options */
+    color: #e0f2f1; /* Text color for options */
+}
+
+#select_for_risk:hover {
+    background-color: #0f3e54; /* Slightly lighter for hover effect */
+    border-color: #2a4c60; /* Slightly darker for border on hover */
+}
+
+.rows_text{
+    margin-top: 7%;
+    font-size: 1.3rem;
+    color: azure;
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+#select_row{
+    width: 93%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border-radius: 5px;
+    background-color: #1b2a33; /* Matches your design theme */
+    color: #e0f2f1; /* Text color for readability */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.rows_list {
+    margin-left: 6%;
+}
+
+#select_row_list option {
+    background-color: #1b2a33; /* Consistent background for options */
+    color: #e0f2f1; /* Text color for options */
+}
+
+#select_row_list:hover {
+    background-color: #0f3e54; /* Slightly lighter for hover effect */
+    border-color: #2a4c60; /* Slightly darker for border on hover */
+}
+
+.button_for_bet{
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.button_bet{
+    width: 93%;
+    font-size: 1.2rem;
+    padding: 14px;
+    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border-radius: 5px;
+    background-color: #04fa14; /* Matches your design theme */
+    color: black; /* Text color for readability */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h3 class="game_title">plinko</h3>
+    </div>
+
+    <div class="main_part">
+        <div class="med">
+        <div class="game_medium">
+           <button class="manual">manual</button>
+           <button class="auto">auto</button>
+        </div>
+
+        <div class="bet_amount_text">bet amount</div>
+        <div class="bet_amount">
+            <input type="text" value="0.000000" class="amount_write">
+            <button class="half_amount">1/2</button>
+            <button class="double_amount">2x</button>
+        </div>
+
+        <div class="select_text">Risk</div>
+        <div class="risk_amount">
+            <select name="select_for_risk" id="select_for_risk">
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="rows_text">Rows</div>
+        <div class="rows_list">
+            <select name="select_row_list" id="select_row">
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+                <option value="eleven">11</option>
+                <option value="twelve">12</option>
+                <option value="thirteen">13</option>
+                <option value="fourteen">14</option>
+                <option value="fifteen">15</option>
+                <option value="sixteen">16</option>
+            </select>
+        </div>
+
+        <div class="button_for_bet">
+            <button class="button_bet">Bet</button>
+        </div>
+    </div>
+
+        <!-- <div class="main_game_part">
+            <div class="first_row">
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+                <div class="first_row_element"></div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
