@@ -13,6 +13,7 @@
 html , body{
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 .header{
@@ -30,13 +31,17 @@ html , body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.main_part{
+/* .main_part{
     display: flex;
     height: 100%;
     flex-grow: 1;
     background-color: #0f3e54;
+} */
+.main_part {
+    display: flex;
+    height: calc(100% - 60px);
+    background-color: #0f3e54;
 }
-
 .manual , .auto{
     font-size: 2rem;
     border: 1px solid black;
@@ -53,23 +58,23 @@ html , body{
 }
 
 .manual {
-    background-color: #2a4c60;/* Vibrant orange */
+    background-color: #2a4c60;
     color: white;
 }
 
 .manual:hover {
-    background-color: #4a6a73; /* Slightly darker orange for hover effect */
+    background-color: #4a6a73;
     color: #f1f1f1;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .auto {
-    background-color: #2a4c60; /* Vibrant blue */
+    background-color: #2a4c60; 
     color: white;
 }
 
 .auto:hover {
-    background-color: #4a6a73; /* Slightly darker blue for hover effect */
+    background-color: #4a6a73;
     color: #f1f1f1;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -100,6 +105,7 @@ html , body{
     border: 1px solid black;
     margin-top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .first_row{
@@ -141,7 +147,7 @@ html , body{
 
 
 .half_amount:hover, .double_amount:hover {
-    background-color: #2a4c60; /* Slightly darker for hover effect */
+    background-color: #2a4c60;
     color: #e0f2f1;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -174,22 +180,22 @@ html , body{
     width: 93%;
     font-size: 1.2rem;
     padding: 10px;
-    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border: 1px solid #4a6a73;
     border-radius: 5px;
-    background-color: #1b2a33; /* Matches your design theme */
-    color: #e0f2f1; /* Text color for readability */
+    background-color: #1b2a33;
+    color: #e0f2f1;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 #select_for_risk option {
-    background-color: #1b2a33; /* Consistent background for options */
-    color: #e0f2f1; /* Text color for options */
+    background-color: #1b2a33;
+    color: #e0f2f1; 
 }
 
 #select_for_risk:hover {
-    background-color: #0f3e54; /* Slightly lighter for hover effect */
-    border-color: #2a4c60; /* Slightly darker for border on hover */
+    background-color: #0f3e54;
+    border-color: #2a4c60;
 }
 
 .rows_text{
@@ -204,10 +210,10 @@ html , body{
     width: 93%;
     font-size: 1.2rem;
     padding: 10px;
-    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border: 1px solid #4a6a73;
     border-radius: 5px;
-    background-color: #1b2a33; /* Matches your design theme */
-    color: #e0f2f1; /* Text color for readability */
+    background-color: #1b2a33;
+    color: #e0f2f1;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -217,13 +223,13 @@ html , body{
 }
 
 #select_row_list option {
-    background-color: #1b2a33; /* Consistent background for options */
-    color: #e0f2f1; /* Text color for options */
+    background-color: #1b2a33;
+    color: #e0f2f1;
 }
 
 #select_row_list:hover {
-    background-color: #0f3e54; /* Slightly lighter for hover effect */
-    border-color: #2a4c60; /* Slightly darker for border on hover */
+    background-color: #0f3e54;
+    border-color: #2a4c60; 
 }
 
 .button_for_bet{
@@ -235,11 +241,24 @@ html , body{
     width: 93%;
     font-size: 1.2rem;
     padding: 14px;
-    border: 1px solid #4a6a73; /* Adjust to match your theme */
+    border: 1px solid #4a6a73;
     border-radius: 5px;
-    background-color: #04fa14; /* Matches your design theme */
-    color: black; /* Text color for readability */
+    background-color: #04fa14;
+    color: black; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
+
+.button_bet:hover {
+    background-color: #03c211; 
+    border-color: #038e0d;
+    color: white; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}   
 
